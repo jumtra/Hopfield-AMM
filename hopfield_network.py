@@ -111,7 +111,7 @@ class Model():
             if(self.plot_flag == 1):
                 self.plot(test_predict,"Test")
             
-            # 正答率，距離の計算
+            # 正答率，誤差率の計算
             _err = self.Error_Rate(test_idx,test_predict)
             err += _err
             if _err == 0:
